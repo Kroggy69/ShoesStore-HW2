@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* //// FONT //// */
+
+@font-face {
+    font-family: popl;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Kh freehand;
+    src: url(../font/Kh\ Freehand\ Regular.ttf);
+}
+
+@font-face {
+    font-family: popt;
+    src: url(../font/Battambang-Thin.ttf);
+}
+
+@font-face {
+    font-family: popm;
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+body {
+    background-color: #e3e1db;
+}
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+}
+
+/* ///////// BRAND AND NAVBAR //////// */
+
+header{
+    width: 1200px;
+    height: 212px;
+    /* border: 1px solid black; */
+}
+
+.brand{
+    width: 100%;
+    height: 150px;
+    background: url(../img/logo.png), url(../img/address.png), white;
+    background-position: center left, 98% -20px;
+    background-size: 440px, 200px;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin-top: 2px;
+    background: linear-gradient(0deg, rgb(129, 149, 129) 0%, rgba(171,196,170,1) 100%);
+}
+
+.navbar ul{
+    width: 100%;
+    display: flex;
+    
+}
+
+.navbar .nav-item{
+    list-style-type: none;
+    
+}
+
+.navbar .nav-link{
+    text-decoration: none;
+    display: block;
+    padding: 15px 50px;
+    font-family: Kh freehand;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-width: 0px 1px 0px 1px;
+}
+
+.navbar .active{
+    background: linear-gradient(325deg, rgba(124,182,123,1) 0%, rgba(215,206,112,1) 100%);
+}
+
+.minus-border{
+    border-left: none;
+}
+
+.navbar .nav-link:hover{
+    background: linear-gradient(325deg, rgba(124,182,123,1) 0%, rgba(215,206,112,1) 100%);
+}
+
+/* /////// MAIN ////// */
+
+section{
+    width: 1200px;
+    height: auto;
+    margin: 2px auto;
+}
+
+    /* /////// HERO ///// */
+
+.hero-banner{
+    width: 1200px;
+    height: 300px;
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+/* ////// PRODUCT TITLE ////// */
+
+.main-content{
+    width: 1160px;
+    height: auto;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1%;
+}
+
+.left-content{
+    width: 25%;
+    height: auto;
+    /* background-color: grey; */
+    overflow: hidden;
+}
+
+.left-content .man {
+    width: 100%;
+    
+}
+
+.left-content .woman{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.left-content h3{
+    background: linear-gradient(0deg, rgb(111, 131, 111) 0%, rgba(171,196,170,1) 100%);
+    font-family: popl;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.left-content .nav-item{
+    list-style-type: none;
+    background-color: #7e967e;
+}
+
+.left-content .nav-link{
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    display: block;
+    font-family: popl;
+    color: white;
+    font-size: 18px;
+    background-color: #7e967e;
+    transition: .3s;
+}
+
+.left-content .nav-link:hover{
+    padding: 10px 30px;
+    background: linear-gradient(325deg, rgba(124,182,123,1) 0%, rgba(215,206,112,1) 100%);
+}
+
+.left-content .lc-minus-border{
+    border: none;
+}
+
+.right-content{
+    width: 75%;
+    height: 920px;
+}
+
+.product-title{
+    width: 100%;
+    /* border: 1px solid red; */
+    background: linear-gradient(0deg, rgb(111, 131, 111) 0%, rgba(171,196,170,1) 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title h3{
+    font-family: popl;
+    padding: 10px ;
+    color: white;
+}
+
+.product-title h5{
+    font-family: popl;
+    padding: 17px ;
+    color: white;
+}
+
+.product{
+    width: 95%;
+    height: 220px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+    align-items: end;
+
+}
+
+.product .item{
+    width: 40%;
+    height: 90%;
+    border: 1px solid #466046;
+    border-radius: 5px;
+}
+
+
+/* //// FOOTER //// */
+
+footer{
+    width: 1200px;
+    height: 100px;
+    background: linear-gradient(0deg, rgb(111, 131, 111) 0%, rgba(171,196,170,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: popm;
+    color: white;
+}
